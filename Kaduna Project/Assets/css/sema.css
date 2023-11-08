@@ -3,14 +3,18 @@
 }
 body{
     margin: 10px;
+    background-image: url(/Assets/images/DEMAND\ NOTICE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
 }
 
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h2{
-    color: rgb(165, 14, 14);
+h2, h1{
+    
     text-align: center;
 }
 
@@ -60,4 +64,20 @@ h4 {
 .sign {
     margin-top: 15%;
     font-size: 22px;
+}
+
+
+
+@media print {
+    @page {
+        size: A4 potrait;
+    }
+}
+
+@media print
+{
+    html
+    {
+        zoom: 80%;
+    }
 }
